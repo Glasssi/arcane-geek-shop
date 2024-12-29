@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/arcane.ico">
+  <link rel="stylesheet" href="styles.css" />
+  <title>AluraGeek</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo AluraGeek" class="logo" />
+      <div class="hearts"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Lista de productos -->
+    <section id="product-list">
+      <h2>MIS PRODUCTOS:</h2>
+      <div id="products-container">
+        <!-- Productos renderizados -->
+        <div class="product-card">
+          <img src="images/peluche.png" alt="Peluche" />
+          <h3>Peluche Chibi Isha Arcane </h3>
+          <p>$24.000 CLP</p>
+        </div>
+        <div class="product-card">
+          <img src="images/peluchePoro.png" alt="Peluche Poro" />
+          <h3>Peluche Poro League Of Legend </h3>
+          <p>$8.000 CLP</p>
+        </div>
+        <div class="product-card">
+          <img src="images/pistola.png" alt="Pistola" />
+          <h3>LLavero de Pistola League Of Legend Jinx</h3>
+          <p>$3.000 CLP</p>
+        </div>
+        <div class="product-card">
+          <img src="images/poleron.png" alt="Polerón" />
+          <h3>Polerón Diseño Arcane Jinx</h3>
+          <p>$15.000 CLP</p>
+        </div>
+        <div class="product-card">
+          <img src="images/taza.png" alt="Taza" />
+          <h3>Taza Diseño Mascafuegos</h3>
+          <p>$14.000 CLP</p>
+        </div>
+        <div class="product-card">
+          <img src="images/figura.png" alt="Figura" />
+          <h3>Figura Jinx Arcane League of Legend</h3>
+          <p>$350.000 CLP</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario para agregar productos -->
+    <section id="add-product">
+      <h2>AGREGAR PRODUCTO:</h2>
+      <form id="product-form">
+        <input type="text" id="name" placeholder="Nombre..." required />
+        <input type="number" id="price" placeholder="Precio..." required />
+        <input type="text" id="image" placeholder="URL de Imagen..." required />
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="hearts">
+        <img src="images/logo.png" alt="Corazón" class="heart" />
+      </div>
+      <p>DESARROLLADO POR DAYANA VIZA LASTRA</p>
+      <p>ALURA LATAM - 2024</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

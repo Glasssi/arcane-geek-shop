@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('https://cdn.jsdelivr.net/gh/ProtoWorld/minecraft-font/Minecraftia-Regular.woff2') format('woff2'); /* Fuente estilo Minecraft */
+}
+
+body {
+  font-family: 'Minecraftia', 'Press Start 2P', cursive; /* Fuente estilo Minecraft */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #e3f2fd, #f8bbd0, #f06292); /* Tornasol celeste, rosado, y fucsia */
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4fc3f7, #ec407a); /* Tornasol celeste y fucsia */
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Minecraftia', 'Press Start 2P', cursive; /* Aplicar fuente estilo Minecraft */
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+#product-list {
+  flex: 2;
+  background: linear-gradient(135deg, #e1f5fe, #f8bbd0); /* Tornasol celeste y rosado */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-product {
+  flex: 1;
+  background: linear-gradient(135deg, #ffffff, #f06292); /* Tornasol blanco y fucsia */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-self: center;
+  margin-top: 50px;
+}
+
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product-card {
+  font-family: 'Minecraftia', 'Press Start 2P', cursive; /* Aplicar fuente estilo Minecraft */
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8bbd0, #4fc3f7); /* Tornasol rosado y celeste */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #880e4f; /* Fucsia oscuro */
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #4a148c; /* Morado */
+}
+
+.product-card button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #d32f2f, #f06292); /* Tornasol rojo y fucsia */
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-card button:hover {
+  background: linear-gradient(135deg, #b71c1c, #ec407a); /* Tornasol rojo oscuro y rosado */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background: linear-gradient(135deg, #4fc3f7, #ec407a); /* Tornasol celeste y fucsia */
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #039be5, #f06292); /* Tornasol celeste intenso y fucsia */
+}
+
+footer {
+  font-family: 'Minecraftia', 'Press Start 2P', cursive; /* Aplicar fuente estilo Minecraft */
+  background: linear-gradient(135deg, #4fc3f7, #ec407a); /* Tornasol celeste y fucsia */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsividad para dispositivos 768px pequeños */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #product-list,
+  #add-product {
+    flex: unset;
+    width: 100%;
+  }
+
+  #add-product {
+    margin-top: 20px;
+  }
+}
+
+ /* Ajuste para pantallas de 375px */
+@media (max-width: 375px) {
+  .logo, .heart {
+    width: 320px; 
+    height: auto;
+  }
+}
+
+/* Ajuste para pantallas de 320px */
+@media (max-width: 320px) {
+  .logo, .heart {
+    width: 285px; 
+    height: auto;
+  }
+}
